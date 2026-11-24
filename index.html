@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تحميل تطبيق دوايا | DAWAYA للأندرويد (APK) — الدليل الطبي والصيدلي الذكي</title>
+    <meta name="description" content="حمّل تطبيق دوايا (DAWAYA) الرسمي للأندرويد مجاناً برابط مباشر: موسوعة 26,597 دواء مصري بالأسعار والبدائل، فاحص التداخلات، خريطة تحديد الألم التفاعلية، ومنبه الجرعات أوفلاين." />
+    <meta property="og:title" content="تحميل تطبيق دوايا | DAWAYA APK للأندرويد" />
+    <meta property="og:description" content="أشمل تطبيق دوائي وصحي في مصر: 26,597 دواء بالأسعار الرسمية والبدائل، فحص التداخلات، وخريطة الألم — مجاني بدون إعلانات." />
+    <meta property="og:type" content="website" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "DAWAYA | دوايا",
+        "alternateName": "تطبيق دوايا للأدوية والصحة",
+        "operatingSystem": "Android 8.0+",
+        "applicationCategory": "MedicalApplication",
+        "softwareVersion": "3.0.0",
+        "downloadUrl": "https://github.com/MMO277/DAWAYA/releases/latest/download/DAWAYA.apk",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EGP"
+        }
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      html { scroll-behavior: smooth; }
+      body {
+        font-family: 'IBM Plex Sans Arabic', system-ui, sans-serif;
+        background: #F6F9F8;
+        color: #0B1B32;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      h1, h2, h3, .font-display {
+        font-family: 'Cairo', 'IBM Plex Sans Arabic', sans-serif;
+      }
+      .hero-surface {
+        background:
+          radial-gradient(circle at 15% 18%, rgba(19, 136, 102, 0.11) 0%, transparent 45%),
+          radial-gradient(circle at 86% 12%, rgba(207, 210, 157, 0.22) 0%, transparent 40%),
+          linear-gradient(180deg, #FFFFFF 0%, #F2F8F6 100%);
+      }
+      .device-frame {
+        background: #0B1B32;
+        border-radius: 34px;
+        padding: 9px;
+        box-shadow: 0 28px 60px -15px rgba(11, 27, 50, 0.28), 0 0 0 1px rgba(11, 27, 50, 0.08);
+      }
+      .device-screen {
+        background: #FFFFFF;
+        border-radius: 26px;
+        overflow: hidden;
+      }
+      .scenario-tab {
+        transition: all 0.16s ease;
+      }
+      .scenario-tab.active {
+        background: #0B1B32;
+        color: #FFFFFF;
+        border-color: #0B1B32;
+        box-shadow: 0 8px 20px rgba(11, 27, 50, 0.16);
+      }
+      .faq-body { display: none; }
+      .faq-item.open .faq-body { display: block; }
+      .faq-item.open .faq-arrow { transform: rotate(180deg); }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col pb-20 sm:pb-0">
+    <!-- Crisp Minimal Editorial Navbar -->
+    <nav class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+        <a href="#top" class="flex items-center gap-3 no-underline">
+          <div class="w-10 h-10 rounded-2xl bg-[#0B1B32] flex items-center justify-center shadow-sm">
+            <svg width="26" height="26" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <circle cx="20" cy="20" r="18" fill="#CFD29D" />
+              <path d="M13 20.5C13 16.4 16.4 13 20.5 13H25V21C25 24.8 21.8 28 18 28H13V20.5Z" fill="#138866" />
+              <circle cx="19" cy="20" r="3" fill="#0B1B32" />
+            </svg>
+          </div>
+          <div>
+            <div class="font-display font-black text-base text-[#0B1B32] leading-none">دوايا | DAWAYA</div>
+            <div class="text-[11px] text-[#138866] font-bold mt-0.5">التطبيق الرسمي للأندرويد</div>
+          </div>
+        </a>
+
+        <div class="hidden md:flex items-center gap-7 text-xs font-bold text-slate-600">
+          <a href="#summary" class="hover:text-[#138866] transition">عن التطبيق</a>
+          <a href="#why-download" class="hover:text-[#138866] transition">ليه تحمّله؟</a>
+          <a href="#ecosystem" class="hover:text-[#138866] transition">أقسام دوايا</a>
+          <a href="#comparison" class="hover:text-[#138866] transition">ليه هو الأفضل؟</a>
+          <a href="#install" class="hover:text-[#138866] transition">طريقة التثبيت</a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button
+            id="btn-open-qr"
+            type="button"
+            class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-[#0B1B32] text-xs font-extrabold transition"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM18 18h3v3h-3z"/></svg>
+            <span>QR للهاتف</span>
+          </button>
+          <a
+            href="https://github.com/MMO277/DAWAYA/releases/latest/download/DAWAYA.apk"
+            download="DAWAYA.apk"
+            class="px-4 py-2.5 rounded-xl bg-[#138866] hover:bg-[#0F7054] text-white text-xs font-extrabold transition shadow-md shadow-emerald-900/15"
+          >
+            تحميل APK مجاناً
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION: EDITORIAL LIGHT + 3-SCREEN LIVE DEVICE SHOWCASE -->
+    <header id="top" class="hero-surface border-b border-slate-200/80 pt-10 pb-16 sm:pt-14 sm:pb-20 px-4 sm:px-6">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Right 6 Cols: App Store Header + Direct Download CTA -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-[#138866] text-xs font-extrabold">
+            <span class="w-2 h-2 rounded-full bg-[#138866]"></span>
+            <span>الإصدار الرسمي v3.0 للأندرويد • مجاني 100% بدون إعلانات</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl font-black text-[#0B1B32] leading-[1.22]">
+            أشمل تطبيق دوائي وصحي
+            <span class="block text-[#138866]">في جيبك — حتى بدون نت</span>
+          </h1>
+
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-xl">
+            <strong class="text-[#0B1B32]">دوايا (DAWAYA)</strong> يجمع لك موسوعة <strong class="text-[#0B1B32]">26,597 دواء مصري</strong> بالأسعار الرسمية وأرخص البدائل المتطابقة، فاحص التداخلات مع الأدوية والأكل، خريطة تحديد الألم التفاعلية، ومنبهات الجرعات المحلية في تطبيق واحد سريع وآمن.
+          </p>
+
+          <!-- Primary & Secondary CTA Buttons -->
+          <div class="flex flex-wrap items-center gap-3">
+            <a
+              href="https://github.com/MMO277/DAWAYA/releases/latest/download/DAWAYA.apk"
+              download="DAWAYA.apk"
+              class="inline-flex items-center gap-3 px-7 py-4 rounded-2xl bg-[#138866] hover:bg-[#0F7054] text-white font-extrabold text-sm sm:text-base transition shadow-xl shadow-emerald-900/20"
+            >
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>تحميل تطبيق دوايا (DAWAYA.apk)</span>
+            </a>
+
+            <button
+              id="btn-copy-link"
+              type="button"
+              class="inline-flex items-center gap-2 px-5 py-4 rounded-2xl bg-white hover:bg-slate-50 border border-slate-300 text-[#0B1B32] text-xs sm:text-sm font-extrabold transition"
+            >
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#138866" strokeWidth="2.2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span id="copy-label">نسخ رابط التحميل</span>
+            </button>
+          </div>
+
+          <!-- Play-Store-Style Metadata Row -->
+          <div class="grid grid-cols-3 gap-3 pt-2 max-w-md">
+            <div class="bg-white rounded-2xl border border-slate-200/90 p-3 text-center">
+              <div class="font-display font-black text-lg text-[#0B1B32]">26,597</div>
+              <div class="text-[11px] text-slate-500 font-semibold">دواء مصري مسجّل</div>
+            </div>
+            <div class="bg-white rounded-2xl border border-slate-200/90 p-3 text-center">
+              <div class="font-display font-black text-lg text-[#138866]">100%</div>
+              <div class="text-[11px] text-slate-500 font-semibold">مجاني وبدون إعلانات</div>
+            </div>
+            <div class="bg-white rounded-2xl border border-slate-200/90 p-3 text-center">
+              <div class="font-display font-black text-lg text-[#0B1B32]">أوفلاين</div>
+              <div class="text-[11px] text-slate-500 font-semibold">بحث ومنبه بدون نت</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left 6 Cols: Crisp Interactive Live App Device Showcase -->
+        <div class="lg:col-span-6 flex flex-col items-center">
+          <div class="relative w-full max-w-[330px]">
+            <!-- Soft background accent card -->
+            <div class="hidden sm:block absolute -inset-4 rounded-[42px] bg-gradient-to-br from-[#138866]/15 via-[#CFD29D]/25 to-transparent -rotate-3 pointer-events-none"></div>
+
+            <div class="device-frame relative">
+              <div class="device-screen">
+                <!-- App Top Header Inside Phone -->
+                <div class="bg-[#0B1B32] text-white px-4 pt-3 pb-3.5">
+                  <div class="flex items-center justify-between text-[10px] text-slate-300 mb-2">
+                    <span class="font-mono">com.dawaya.health</span>
+                    <span class="px-2 py-0.5 rounded-full bg-[#138866] text-white font-bold">Android App</span>
+                  </div>
+                  <div class="flex items-center gap-2.5">
+                    <div class="w-8 h-8 rounded-xl bg-[#CFD29D] flex items-center justify-center shrink-0">
+                      <span class="w-3.5 h-3.5 rounded-full bg-[#138866] block"></span>
+                    </div>
+                    <div>
+                      <div class="font-display font-black text-sm leading-tight">دوايا | DAWAYA</div>
+                      <div class="text-[10px] text-[#CFD29D]">دليلك الطبي والصيدلي الذكي</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Dynamic Phone Body -->
+                <div id="phone-body" class="p-3.5 bg-[#F8FAFC] min-h-[305px] space-y-2.5"></div>
+
+                <!-- Interactive Phone Tabs -->
+                <div class="bg-white border-t border-slate-200 p-2 grid grid-cols-3 gap-1.5">
+                  <button type="button" data-phone="drugs" class="phone-tab py-2 rounded-xl bg-[#0B1B32] text-white text-[11px] font-extrabold">الأدوية</button>
+                  <button type="button" data-phone="pain" class="phone-tab py-2 rounded-xl bg-slate-100 text-slate-600 text-[11px] font-bold">خريطة الألم</button>
+                  <button type="button" data-phone="safety" class="phone-tab py-2 rounded-xl bg-slate-100 text-slate-600 text-[11px] font-bold">الأمان والمنبه</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-xs text-slate-500 font-semibold mt-4">جرّب التبديل بين الشاشات الثلاثة داخل الهاتف</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION 1: CLEAR APP SUMMARY & WHO IT'S FOR -->
+    <section id="summary" class="max-w-6xl mx-auto px-4 sm:px-6 py-14 w-full">
+      <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-10 shadow-sm">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6 space-y-3.5">
+            <span class="inline-block px-3 py-1 rounded-full bg-emerald-50 text-[#138866] text-xs font-extrabold">ملخص التطبيق في 20 ثانية</span>
+            <h2 class="text-2xl sm:text-3xl font-black text-[#0B1B32] leading-snug">
+              إيه هو تطبيق دوايا؟ ومين بيستفيد منه؟
+            </h2>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              تطبيق <strong class="text-[#0B1B32]">دوايا</strong> هو رفيقك اليومي لإدارة الأدوية والسلامة الدوائية في مصر. بدل ما تدور في مواقع متفرقة أو تخمّن سعر الدواء وبديله، التطبيق بيجمعلك <strong class="text-[#0B1B32]">السعر الرسمي، البدائل المتطابقة، فحص التداخلات، خريطة تحديد الألم، وكارت الطوارئ QR</strong> في واجهة عربية واحدة سهلة وسريعة.
+            </p>
+          </div>
+          <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="p-4 rounded-2xl bg-[#F6F9F8] border border-slate-200/80 space-y-1.5">
+              <div class="text-xs font-black text-[#138866]">01 • المريض والأسرة</div>
+              <p class="text-xs text-slate-600 leading-relaxed">توفير في تكلفة الروشتة، حماية من تعارض الأدوية، وتنبيهات جرعات يومية.</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-[#F6F9F8] border border-slate-200/80 space-y-1.5">
+              <div class="text-xs font-black text-[#0B1B32]">02 • الأمهات وكبار السن</div>
+              <p class="text-xs text-slate-600 leading-relaxed">حاسبة جرعات الأطفال بالوزن، متابعة التطعيمات، وكارت طوارئ طبي QR.</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-[#F6F9F8] border border-slate-200/80 space-y-1.5">
+              <div class="text-xs font-black text-[#138866]">03 • الصيادلة والطلاب</div>
+              <p class="text-xs text-slate-600 leading-relaxed">مرجع سريع لـ 26,597 دواء بالمادة الفعالة والتكافؤ الحيوي بدون إنترنت.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: INTERACTIVE "WHY DOWNLOAD NOW?" SCENARIO SWITCHER -->
+    <section id="why-download" class="max-w-6xl mx-auto px-4 sm:px-6 pb-16 w-full">
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <span class="text-xs font-extrabold text-[#138866]">مواقف حقيقية بتحصل كل يوم</span>
+        <h2 class="text-2xl sm:text-4xl font-black text-[#0B1B32] mt-1">ليه لازم تحمّل تطبيق دوايا دلوقتي؟</h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-2">اختار أي موقف من اللي تحت وشوف إزاي دوايا بيحلهولك في ثواني.</p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-2 mb-6">
+        <button type="button" data-sc="price" class="scenario-tab active px-4 py-2.5 rounded-xl border border-slate-300 bg-white text-xs font-extrabold text-slate-700">الدواء غالي أو ناقص؟</button>
+        <button type="button" data-sc="mix" class="scenario-tab px-4 py-2.5 rounded-xl border border-slate-300 bg-white text-xs font-extrabold text-slate-700">خايف من تعارض دواء أو أكل؟</button>
+        <button type="button" data-sc="pain" class="scenario-tab px-4 py-2.5 rounded-xl border border-slate-300 bg-white text-xs font-extrabold text-slate-700">حاسس بوجع ومش عارف أنهي دكتور؟</button>
+        <button type="button" data-sc="offline" class="scenario-tab px-4 py-2.5 rounded-xl border border-slate-300 bg-white text-xs font-extrabold text-slate-700">بتنسى الجرعات أو النت فاصل؟</button>
+      </div>
+
+      <div id="scenario-box" class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm grid grid-cols-1 md:grid-cols-12 gap-6 items-center"></div>
+    </section>
+
+    <!-- SECTION 2.5: FULL DAWAYA PLATFORM ECOSYSTEM (تفاصيل شاملة لكل ما بداخل دوايا) -->
+    <section id="ecosystem" class="max-w-6xl mx-auto px-4 sm:px-6 pb-16 w-full">
+      <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-10 shadow-sm space-y-7">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-full bg-emerald-50 text-[#138866] text-xs font-extrabold mb-2">
+              منظومة صحية شاملة — أكثر من 40 أداة وعيادة
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-black text-[#0B1B32]">ماذا ستجد بالضبط داخل تطبيق دوايا؟</h2>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 max-w-md leading-relaxed">
+            تصفّح الأقسام الرئيسية بالأسفل لتكتشف كل الأدوات والعيادات والخدمات التي ستحصل عليها مجانًا بمجرد التثبيت.
+          </p>
+        </div>
+
+        <!-- Ecosystem Category Tabs -->
+        <div class="flex flex-wrap gap-2">
+          <button type="button" data-eco="drugs" class="eco-tab px-4 py-2.5 rounded-xl border text-xs font-extrabold transition bg-[#0B1B32] text-white border-[#0B1B32]">الأدوية والأمان الدوائي (8 أدوات)</button>
+          <button type="button" data-eco="clinics" class="eco-tab px-4 py-2.5 rounded-xl border text-xs font-extrabold transition bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100">العيادات والتشخيص (20+ عيادة)</button>
+          <button type="button" data-eco="daily" class="eco-tab px-4 py-2.5 rounded-xl border text-xs font-extrabold transition bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100">المتابعة اليومية والطوارئ (7 أدوات)</button>
+          <button type="button" data-eco="learn" class="eco-tab px-4 py-2.5 rounded-xl border text-xs font-extrabold transition bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100">التوعية والمحاكاة 3D والصيدليات</button>
+        </div>
+
+        <!-- Dynamic Ecosystem Grid -->
+        <div id="eco-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5"></div>
+
+        <!-- Trust, Privacy & Clinical Verification Strip -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 pt-4 border-t border-slate-200">
+          <div class="p-4 rounded-2xl bg-[#F6F9F8] border border-slate-200/80">
+            <div class="text-xs font-black text-[#0B1B32] mb-1">بيانات رسمية ومحدّثة باستمرار</div>
+            <p class="text-[11px] text-slate-600 leading-relaxed">أسعار الأدوية والمواد الفعالة والبدائل المتكافئة مبنية على بيانات السوق الدوائي المصري مع صور عبوات موثّقة.</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-[#F6F9F8] border border-slate-200/80">
+            <div class="text-xs font-black text-[#0B1B32] mb-1">خصوصية كاملة لملفك الصحي</div>
+            <p class="text-[11px] text-slate-600 leading-relaxed">حساسيتك وتقاريرك وأدويتك معزولة بالكامل لحسابك الشخصي فقط مع إمكانية قفل الملف ومزامنته سحابيًا بأمان.</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-[#F6F9F8] border border-slate-200/80">
+            <div class="text-xs font-black text-[#138866] mb-1">منصة مصرية بهوية طبية واضحة</div>
+            <p class="text-[11px] text-slate-600 leading-relaxed">مصممة خصيصًا للمريض والصيدلي المصري لدعم الاستخدام الرشيد للمضادات الحيوية وتقليل الأخطاء الدوائية.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: WHY DAWAYA IS THE BEST APP (CLEAN COMPARISON TABLE) -->
+    <section id="comparison" class="bg-white border-y border-slate-200 py-16 px-4 sm:px-6">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-extrabold text-[#138866]">مقارنة صريحة ومباشرة</span>
+          <h2 class="text-2xl sm:text-4xl font-black text-[#0B1B32] mt-1">ليه دوايا أحسن تطبيق دوائي في مصر؟</h2>
+        </div>
+
+        <div class="rounded-3xl border border-slate-200 overflow-hidden shadow-lg bg-white">
+          <div class="overflow-x-auto">
+            <table class="w-full text-right border-collapse text-xs sm:text-sm">
+              <thead>
+                <tr class="bg-[#0B1B32] text-white">
+                  <th class="py-4 px-5 font-extrabold">المعيار</th>
+                  <th class="py-4 px-5 font-black bg-[#138866] text-white">تطبيق دوايا | DAWAYA</th>
+                  <th class="py-4 px-5 font-bold text-slate-300">تطبيقات الأدوية التقليدية</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200">
+                <tr>
+                  <td class="py-4 px-5 font-extrabold text-[#0B1B32]">حجم وصور قاعدة الأدوية</td>
+                  <td class="py-4 px-5 font-extrabold text-[#138866] bg-emerald-50/60">26,597 دواء مصري + 22,523 صورة عبوة موثّقة</td>
+                  <td class="py-4 px-5 text-slate-500">قوائم ناقصة أو بدون صور للعبوات</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-5 font-extrabold text-[#0B1B32]">تعارضات الأكل والمشروبات المصرية</td>
+                  <td class="py-4 px-5 font-extrabold text-[#138866] bg-emerald-50/60">فاحص مخصص للشاي والقهوة واللبن والعرقسوس</td>
+                  <td class="py-4 px-5 text-slate-500">غير موجودة</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-5 font-extrabold text-[#0B1B32]">خريطة تحديد الألم التفاعلية</td>
+                  <td class="py-4 px-5 font-extrabold text-[#138866] bg-emerald-50/60">مجسم كامل (ذكر / أنثى) + استجواب وتوجيه للعيادة</td>
+                  <td class="py-4 px-5 text-slate-500">غير موجودة</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-5 font-extrabold text-[#0B1B32]">العمل أوفلاين + منبه الجرعات</td>
+                  <td class="py-4 px-5 font-extrabold text-[#138866] bg-emerald-50/60">يعمل بدون نت مع إشعارات جرعات أندرويد أصلية</td>
+                  <td class="py-4 px-5 text-slate-500">يحتاج إنترنت دائم أو تطبيق منبه منفصل</td>
+                </tr>
+                <tr>
+                  <td class="py-4 px-5 font-extrabold text-[#0B1B32]">الإعلانات والتكلفة</td>
+                  <td class="py-4 px-5 font-extrabold text-[#138866] bg-emerald-50/60">مجاني بالكامل — 0 إعلانات منبثقة</td>
+                  <td class="py-4 px-5 text-slate-500">إعلانات مزعجة وميزات مقفولة باشتراك</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: 3-STEP ANDROID INSTALL & FAQ -->
+    <section id="install" class="max-w-5xl mx-auto px-4 sm:px-6 py-16 w-full space-y-14">
+      <div>
+        <div class="text-center max-w-xl mx-auto mb-9">
+          <span class="text-xs font-extrabold text-[#138866]">تثبيت مباشر وآمن</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-[#0B1B32] mt-1">3 خطوات بس ويبقى التطبيق على موبايلك</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-[#138866] text-white font-display font-black text-base flex items-center justify-center mb-3.5">1</div>
+            <h3 class="font-extrabold text-base text-[#0B1B32] mb-1.5">اضغط تحميل DAWAYA.apk</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">نزّل الملف الرسمي مباشرة من الرابط الموثّق وانتظر ثواني حتى يكتمل في التنزيلات.</p>
+          </div>
+          <div class="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-[#0B1B32] text-[#CFD29D] font-display font-black text-base flex items-center justify-center mb-3.5">2</div>
+            <h3 class="font-extrabold text-base text-[#0B1B32] mb-1.5">اسمح بالتثبيت (مرة واحدة)</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">عند فتح الملف، فعّل خيار «السماح بتثبيت التطبيقات من هذا المصدر» لمتصفحك ثم اضغط رجوع.</p>
+          </div>
+          <div class="bg-white rounded-3xl border border-slate-200 p-6 shadow-sm">
+            <div class="w-10 h-10 rounded-xl bg-[#138866] text-white font-display font-black text-base flex items-center justify-center mb-3.5">3</div>
+            <h3 class="font-extrabold text-base text-[#0B1B32] mb-1.5">اضغط «تثبيت» واستمتع</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">افتح تطبيق دوايا وسجّل بجوجل بضغطة واحدة أو تصفّح الدليل الكامل فورًا.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compact FAQ -->
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl font-black text-[#0B1B32] text-center mb-6">أسئلة سريعة قبل التحميل</h2>
+        <div class="space-y-3">
+          <div class="faq-item open bg-white rounded-2xl border border-slate-200 overflow-hidden">
+            <button type="button" class="faq-btn w-full px-5 py-4 text-right flex items-center justify-between gap-3 font-extrabold text-sm text-[#0B1B32]">
+              <span>هل ملف التطبيق آمن على موبايلي؟</span>
+              <svg class="faq-arrow w-4 h-4 text-[#138866] transition-transform shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-body px-5 pb-4 text-xs text-slate-600 leading-relaxed">
+              نعم 100% — الملف مبني تلقائيًا من الكود الرسمي لمنصة دوايا عبر GitHub Actions ومستضاف مباشرة على GitHub Releases بدون أي إعلانات أو تعديلات خارجية.
+            </div>
+          </div>
+          <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden">
+            <button type="button" class="faq-btn w-full px-5 py-4 text-right flex items-center justify-between gap-3 font-extrabold text-sm text-[#0B1B32]">
+              <span>إزاي هوصلي التحديثات الجديدة؟</span>
+              <svg class="faq-arrow w-4 h-4 text-[#138866] transition-transform shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-body px-5 pb-4 text-xs text-slate-600 leading-relaxed">
+              التطبيق بيكتشف أي إصدار جديد تلقائيًا ويطلعلك رسالة تحديث بضغطة واحدة جوه التطبيق من غير ما تفقد أي بيانات.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL FULL-CONTRAST NAVY CTA BANNER -->
+    <footer class="px-4 sm:px-6 pb-10">
+      <div class="max-w-5xl mx-auto rounded-3xl p-8 sm:p-10 bg-[#0B1B32] text-white border-b-4 border-[#138866] flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+        <div class="text-center md:text-right">
+          <div class="text-xs font-extrabold text-[#CFD29D] mb-1">DAWAYA • com.dawaya.health</div>
+          <div class="font-display text-2xl sm:text-3xl font-black">حمّل تطبيق دوايا الآن مجاناً</div>
+          <div class="text-xs sm:text-sm text-slate-300 mt-1">دليل 26,597 دواء مصري، فاحص التداخلات، وخريطة الألم في جيبك.</div>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          <a
+            href="https://github.com/MMO277/DAWAYA/releases/latest/download/DAWAYA.apk"
+            download="DAWAYA.apk"
+            class="px-6 py-3.5 rounded-2xl bg-[#138866] hover:bg-[#0F7054] text-white text-sm font-extrabold transition shadow-lg"
+          >
+            تحميل DAWAYA.apk الآن
+          </a>
+          <a
+            href="https://dawaya.pages.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-5 py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/20 text-[#CFD29D] text-xs font-extrabold transition"
+          >
+            فتح منصة الويب
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- STICKY MOBILE BOTTOM DOWNLOAD BAR -->
+    <div class="sm:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-4 py-3 flex items-center justify-between gap-3 shadow-lg">
+      <div>
+        <div class="text-xs font-black text-[#0B1B32]">تطبيق دوايا | DAWAYA</div>
+        <div class="text-[10px] text-[#138866] font-bold">Android APK • مجاني 100%</div>
+      </div>
+      <a
+        href="https://github.com/MMO277/DAWAYA/releases/latest/download/DAWAYA.apk"
+        download="DAWAYA.apk"
+        class="px-4 py-2.5 rounded-xl bg-[#138866] text-white text-xs font-extrabold shadow"
+      >
+        تحميل الآن
+      </a>
+    </div>
+
+    <!-- QR MODAL FOR DESKTOP VISITORS -->
+    <div id="qr-modal" class="hidden fixed inset-0 z-50 bg-[#0B1B32]/75 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="w-full max-w-sm bg-white rounded-3xl p-6 text-center space-y-4 shadow-2xl border border-slate-200">
+        <div class="flex items-center justify-between">
+          <span class="font-display font-black text-base text-[#0B1B32]">امسح الكود للتحميل على موبايلك</span>
+          <button id="btn-close-qr" type="button" class="w-8 h-8 rounded-xl bg-slate-100 text-slate-700 font-bold hover:bg-slate-200">✕</button>
+        </div>
+        <div class="p-3 rounded-2xl bg-[#F6F9F8] border border-slate-200 inline-block mx-auto">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https%3A%2F%2Fgithub.com%2FMMO277%2FDAWAYA%2Freleases%2Flatest%2Fdownload%2FDAWAYA.apk"
+            alt="QR Code لتحميل DAWAYA.apk"
+            width="190"
+            height="190"
+            class="block rounded-lg"
+          />
+        </div>
+        <p class="text-xs text-slate-600 leading-relaxed">
+          وجّه كاميرا هاتفك الأندرويد نحو الكود ليبدأ تنزيل <strong class="text-[#0B1B32]">DAWAYA.apk</strong> مباشرة.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        const APK_URL = 'https://github.com/MMO277/DAWAYA/releases/latest/download/DAWAYA.apk';
+
+        // 1. Copy Link
+        const copyBtn = document.getElementById('btn-copy-link');
+        const copyLabel = document.getElementById('copy-label');
+        copyBtn.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(APK_URL);
+          } catch {
+            const ta = document.createElement('textarea');
+            ta.value = APK_URL;
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            ta.remove();
+          }
+          copyLabel.textContent = 'تم نسخ الرابط بنجاح';
+          setTimeout(() => { copyLabel.textContent = 'نسخ رابط التحميل'; }, 2400);
+        });
+
+        // 2. QR Modal
+        const qrModal = document.getElementById('qr-modal');
+        document.getElementById('btn-open-qr').addEventListener('click', () => qrModal.classList.remove('hidden'));
+        document.getElementById('btn-close-qr').addEventListener('click', () => qrModal.classList.add('hidden'));
+        qrModal.addEventListener('click', (e) => {
+          if (e.target === qrModal) qrModal.classList.add('hidden');
+        });
+
+        // 3. Interactive Hero Phone Screens
+        const PHONE_VIEWS = {
+          drugs: `
+            <div class="bg-white rounded-2xl border border-slate-200 p-3 flex items-center justify-between text-xs text-slate-400">
+              <span>ابحث عن دواء أو مادة فعالة...</span>
+              <span class="px-2 py-0.5 rounded-md bg-emerald-50 text-[#138866] font-extrabold text-[10px]">26,597</span>
+            </div>
+            <div class="bg-white rounded-2xl border border-slate-200 p-3 space-y-1.5 shadow-sm">
+              <div class="flex items-center justify-between">
+                <strong class="text-xs text-[#0B1B32]">أوجمنتين 1 جم (14 قرص)</strong>
+                <span class="px-2 py-0.5 rounded-full bg-emerald-50 text-[#138866] text-[10px] font-extrabold">بدائل أرخص</span>
+              </div>
+              <div class="text-[10px] text-slate-500">Amoxicillin + Clavulanic Acid</div>
+              <div class="pt-1.5 border-t border-slate-100 flex justify-between text-[11px] font-bold">
+                <span class="text-slate-600">البديل المصري المتطابق</span>
+                <span class="text-[#138866]">وفّر حتى 45%</span>
+              </div>
+            </div>
+            <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-3 text-[11px] font-bold text-[#0B1B32]">
+              آمن تماماً مع ملفك الصحي وحساسيتك المسجلة
+            </div>
+          `,
+          pain: `
+            <div class="bg-[#0B1B32] text-white rounded-2xl p-3.5 text-center space-y-2">
+              <div class="text-[10px] text-[#CFD29D] font-bold">خريطة تحديد الألم — ذكر / أنثى</div>
+              <div class="w-10 h-10 mx-auto rounded-full bg-rose-500/20 border-2 border-rose-400 flex items-center justify-center">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-500 animate-ping"></span>
+              </div>
+              <div class="text-xs font-extrabold">تم رصد المنطقة تلقائياً</div>
+              <div class="flex justify-center gap-1 text-[10px]">
+                <span class="px-2 py-0.5 rounded bg-[#138866] font-bold">داخلي</span>
+                <span class="px-2 py-0.5 rounded bg-white/15">ثدي / عضل</span>
+                <span class="px-2 py-0.5 rounded bg-white/15">جلد</span>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl border border-slate-200 p-3 text-[11px] text-slate-700 leading-relaxed">
+              <strong class="text-[#0B1B32] block mb-0.5">التوجيه السريري الفوري:</strong>
+              كشف علامات الخطر الطارئة + العيادة المختصة + تقرير جاهز للطبيب.
+            </div>
+          `,
+          safety: `
+            <div class="bg-white rounded-2xl border border-slate-200 p-3 flex items-center justify-between shadow-sm">
+              <div>
+                <div class="text-xs font-extrabold text-[#0B1B32]">منبه الجرعة الصباحية</div>
+                <div class="text-[10px] text-slate-500">إشعار أندرويد محلي أوفلاين</div>
+              </div>
+              <span class="px-2.5 py-1 rounded-lg bg-[#138866] text-white text-[11px] font-extrabold">08:00 ص</span>
+            </div>
+            <div class="bg-amber-50 border border-amber-200 rounded-2xl p-3 text-[11px] text-amber-950 font-bold">
+              تنبيه أكل ودواء: افصل الحديد عن الشاي واللبن بساعتين.
+            </div>
+            <div class="bg-[#0B1B32] text-white rounded-2xl p-3 flex items-center justify-between">
+              <div>
+                <div class="text-xs font-extrabold">الكارت الطبي الذكي (QR)</div>
+                <div class="text-[10px] text-[#CFD29D]">فصيلة الدم • الحساسية • الطوارئ</div>
+              </div>
+              <span class="px-2 py-1 rounded-lg bg-[#138866] text-[10px] font-bold">جاهز</span>
+            </div>
+          `
+        };
+
+        const phoneBody = document.getElementById('phone-body');
+        const phoneTabs = document.querySelectorAll('.phone-tab');
+        function setPhoneView(key) {
+          phoneBody.innerHTML = PHONE_VIEWS[key] || PHONE_VIEWS.drugs;
+          phoneTabs.forEach((b) => {
+            const active = b.getAttribute('data-phone') === key;
+            b.className = 'phone-tab py-2 rounded-xl text-[11px] transition ' +
+              (active ? 'bg-[#0B1B32] text-white font-extrabold' : 'bg-slate-100 text-slate-600 font-bold hover:bg-slate-200');
+          });
+        }
+        phoneTabs.forEach((b) => b.addEventListener('click', () => setPhoneView(b.getAttribute('data-phone'))));
+        setPhoneView('drugs');
+
+        // 4. Interactive "Why Download?" Scenario Switcher
+        const SCENARIOS = {
+          price: {
+            problemTitle: 'الموقف: الدواء غالي جدًا أو ناقص في الصيدلية',
+            problemDesc: 'كتير بنقف محتارين قدام الصيدلية لما الدواء يكون ناقص أو سعره عالي ومش عارفين البديل الآمن.',
+            solutionTitle: 'حل دوايا في ثانية: أرخص بديل مصري متطابق 100%',
+            solutionDesc: 'اكتب اسم الدواء أو صوّر العلبة، ودوايا يطلعلك فورًا كل البدائل المرخصة بنفس المادة الفعالة والتركيز وبالسعر الرسمي عشان توفر حتى 60% بأمان.',
+            metric: '26,597 دواء رسمي',
+            tag: 'حاسبة وفر الروشتة'
+          },
+          mix: {
+            problemTitle: 'الموقف: بتاخد أكتر من دواء وخايف من التعارض',
+            problemDesc: 'خلط أدوية الضغط والمسكنات أو شرب الشاي واللبن مع المضاد الحيوي ممكن يبطل مفعول الدواء أو يضر الكلى.',
+            solutionTitle: 'حل دوايا في ثانية: فاحص التداخلات والأكل المصري',
+            solutionDesc: 'دوايا بيكشف التعارضات الدوائية فورًا، بيحذرك من خلطات خطيرة زي الضربة الثلاثية للكلى وحقنة البرد، وبيحددلك الفاصل الزمني بالساعة بين الأكل والدواء.',
+            metric: 'درع أمان دوائي فوري',
+            tag: 'فاحص التداخلات والحساسية'
+          },
+          pain: {
+            problemTitle: 'الموقف: حاسس بوجع ومش عارف تكشف عند أنهي تخصص',
+            problemDesc: 'أحيانًا الوجع بيحيّر المريض بين الباطنة والقلب والعظام أو حتى مشكلة جلدية سطحية.',
+            solutionTitle: 'حل دوايا في ثانية: خريطة تحديد الألم التفاعلية',
+            solutionDesc: 'شاور بإيدك على مكان الوجع على الجسم الكامل (ذكر أو أنثى)، جاوب 3 أسئلة مخصصة، ودوايا يحددلك لو في علامات خطر طارئة والعيادة الأنسب ليك.',
+            metric: 'تقييم مبدئي + تقرير للطبيب',
+            tag: 'خريطة الجسم الذكية'
+          },
+          offline: {
+            problemTitle: 'الموقف: بتنسى مواعيد الجرعات أو النت فاصل وقت الطوارئ',
+            problemDesc: 'معظم المواقع بتقف أول ما الإنترنت يفصل، وتفويت جرعات المضاد الحيوي بيقلل فعالية العلاج.',
+            solutionTitle: 'حل دوايا في ثانية: منبه محلي أوفلاين + كارت طوارئ QR',
+            solutionDesc: 'التطبيق بيشتغل أوفلاين، يبعتلك تنبيهات أندرويد أصلية في ميعاد كل جرعة، ويحفظ فصيلة دمك وحساسيتك في كارت طوارئ رقمي جاهز للمسح في أي لحظة.',
+            metric: 'يعمل 100% بدون إنترنت',
+            tag: 'منبه الجرعات + كارت QR'
+          }
+        };
+
+        const scenarioBox = document.getElementById('scenario-box');
+        const scenarioTabs = document.querySelectorAll('.scenario-tab');
+        function setScenario(key) {
+          const sc = SCENARIOS[key] || SCENARIOS.price;
+          scenarioTabs.forEach((b) => b.classList.toggle('active', b.getAttribute('data-sc') === key));
+          scenarioBox.innerHTML = `
+            <div class="md:col-span-5 p-5 rounded-2xl bg-rose-50/70 border border-rose-200/80 space-y-2">
+              <span class="inline-block px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-700 text-[11px] font-extrabold">المشكلة اليومية</span>
+              <h3 class="font-display font-black text-lg text-[#0B1B32]">${sc.problemTitle}</h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">${sc.problemDesc}</p>
+            </div>
+            <div class="md:col-span-7 p-6 rounded-2xl bg-emerald-50/70 border border-emerald-200 space-y-3">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="inline-block px-3 py-0.5 rounded-full bg-[#138866] text-white text-[11px] font-extrabold">${sc.tag}</span>
+                <span class="text-xs font-extrabold text-[#0B1B32]">${sc.metric}</span>
+              </div>
+              <h3 class="font-display font-black text-xl text-[#0B1B32]">${sc.solutionTitle}</h3>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">${sc.solutionDesc}</p>
+            </div>
+          `;
+        }
+        scenarioTabs.forEach((b) => b.addEventListener('click', () => setScenario(b.getAttribute('data-sc'))));
+        setScenario('price');
+
+        // 4.5 Interactive Platform Ecosystem Directory
+        const ECO_DATA = {
+          drugs: [
+            { title: 'موسوعة 26,597 دواء مصري', desc: 'الاسم التجاري، المادة الفعالة، التركيز، السعر الرسمي، و22,523 صورة عبوة موثّقة.' },
+            { title: 'حاسبة وفر الروشتة والبديل الأرخص', desc: 'استخراج البدائل المتطابقة 100% في المادة والتركيز لتوفير حتى 60% من التكلفة.' },
+            { title: 'فاحص التداخلات الدوائية والحساسية', desc: 'يكشف التعارضات بين أدويتك وملفك الصحي ويحذر من الخلطات الخطيرة.' },
+            { title: 'فاحص الأكل والشرب مع الدواء', desc: 'يحدد الفاصل الزمني بالساعة بين الدواء والشاي والقهوة واللبن والعرقسوس.' },
+            { title: 'رادار الروشتة والماسح بالكاميرا', desc: 'تصوير العلبة أو الشريط المقطوع أو الروشتة لكشف الدواء وتكرار المادة الفعالة.' },
+            { title: 'حاسبة جرعات الأطفال بالوزن', desc: 'حساب دقيق للجرعة بالملليلتر حسب وزن الطفل لتجنب الجرعات الزائدة.' },
+            { title: 'تحذير حقنة البرد والضربة الثلاثية', desc: 'شرح مبسط ومباشر لمخاطر الخلطات العشوائية الشائعة على الكلى والمناعة.' },
+            { title: 'فاحص أدوية المطار والسفر', desc: 'تحقق من الأدوية المقيدة قبل السفر للسعودية والخليج وأوروبا.' }
+          ],
+          clinics: [
+            { title: 'خريطة تحديد الألم التفاعلية', desc: 'مجسم كامل للذكر والأنثى — شاور على مكان الوجع وميّز بين الأعضاء والثدي والجلد.' },
+            { title: 'مشخص الأعراض وتوجيه العيادة', desc: 'يحدد هل حالتك طوارئ مستشفى أم عيادة وأي تخصص طبي يناسب شكوتك.' },
+            { title: 'أكثر من 20 عيادة تخصصية', desc: 'القلب، الصدر، الكلى، الجهاز الهضمي، العظام، المخ والأعصاب، العيون، الأسنان، والجلدية.' },
+            { title: 'عيادة صحة المرأة والحمل والرضاعة', desc: 'فحص أمان الأدوية أثناء الحمل والرضاعة ومتابعة صحة المرأة.' },
+            { title: 'عيادة الأطفال وأول سنة', desc: 'دليل متابعة الرضع، جدول التطعيمات المصرية، ودليل ألبان الأطفال.' },
+            { title: 'فك رموز التحاليل الطبية', desc: 'قراءة مبسطة لنتائج تحاليل الدم والغدة والسكر والوظائف الحيوية.' },
+            { title: 'مُحضّر زيارة الطبيب الذكي', desc: 'يرتب شكوتك وأدويتك ويجهّز أهم 5 أسئلة طبية قبل دخولك للعيادة.' },
+            { title: 'مولّد وجبات الأمراض المزمنة', desc: 'خطط غذائية مصرية صحية لمرضى السكر والضغط والكلى والنقرس.' }
+          ],
+          daily: [
+            { title: 'منبه الجرعات المحلي أوفلاين', desc: 'إشعارات أندرويد أصلية لمواعيد أدويتك ومضاداتك الحيوية حتى بدون نت.' },
+            { title: 'الكارت الطبي الذكي (QR)', desc: 'فصيلة دمك، حساسيتك، وأدويتك المزمنة في كارت طوارئ رقمي قابل للطباعة.' },
+            { title: 'ساعة الصيام وأدوية رمضان', desc: 'إعادة جدولة مواعيد أدويتك بأمان بين الإفطار والسحور.' },
+            { title: 'مُنقذ الجرعة الفائتة', desc: 'يرشدك بدقة ماذا تفعل إذا نسيت موعد جرعة دواء أو حبة منع حمل.' },
+            { title: 'صيدلية البيت المنزلية', desc: 'سجّل أدوية منزلك وتواريخ الصلاحية لتنبيهك قبل انتهائها.' },
+            { title: 'عدّاد بخاخات الربو وجدول الكورتيزون', desc: 'حساب البخات المتبقية وجدولة السحب التدريجي الآمن للكورتيزون.' },
+            { title: 'تقرير طبي شامل قابل للمشاركة', desc: 'ملخص منظم لسجلك الدوائي والحساسية جاهز للعرض على أي طبيب.' }
+          ],
+          learn: [
+            { title: 'مستشفى التمريض المفتوح 3D', desc: 'تجربة محاكاة تعليمية تفاعلية لتدريب طلاب التمريض والصيدلة والطب.' },
+            { title: 'محاكي أثر الدواء داخل الأعضاء', desc: 'شرح بصري لكيفية عمل الأدوية وتأثير التداخلات داخل الكلى والمعدة والرئتين.' },
+            { title: 'اختبارات وشهادة سفير الوعي الدوائي', desc: 'اختبر معلوماتك عن الاستخدام الرشيد للمضادات الحيوية واحصل على شهادة رقمية.' },
+            { title: 'دليل الصيدليات المعتمدة والطلبات', desc: 'ابحث عن أقرب صيدلية شريكة وتواصل معها بخصوصية وأمان كامل.' }
+          ]
+        };
+
+        const ecoGrid = document.getElementById('eco-grid');
+        const ecoTabs = document.querySelectorAll('.eco-tab');
+        function renderEco(key) {
+          const items = ECO_DATA[key] || ECO_DATA.drugs;
+          ecoTabs.forEach((b) => {
+            const active = b.getAttribute('data-eco') === key;
+            b.className = 'eco-tab px-4 py-2.5 rounded-xl border text-xs font-extrabold transition ' +
+              (active ? 'bg-[#0B1B32] text-white border-[#0B1B32] shadow-sm' : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100');
+          });
+          ecoGrid.innerHTML = items.map((item) => `
+            <div class="p-4 rounded-2xl bg-[#F6F9F8] border border-slate-200/90 hover:border-[#138866]/50 transition space-y-1.5">
+              <div class="w-2 h-2 rounded-full bg-[#138866]"></div>
+              <h3 class="font-display font-extrabold text-sm text-[#0B1B32]">${item.title}</h3>
+              <p class="text-[11px] text-slate-600 leading-relaxed">${item.desc}</p>
+            </div>
+          `).join('');
+        }
+        ecoTabs.forEach((b) => b.addEventListener('click', () => renderEco(b.getAttribute('data-eco'))));
+        renderEco('drugs');
+
+        // 5. FAQ Accordion
+        document.querySelectorAll('.faq-btn').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const item = btn.closest('.faq-item');
+            if (item) item.classList.toggle('open');
+          });
+        });
+        // 6. Optional ?auto=1 trigger when scanning a direct-download QR
+        try {
+          const params = new URLSearchParams(window.location.search);
+          if (params.get('auto') === '1') {
+            const a = document.createElement('a');
+            a.href = APK_URL;
+            a.download = 'DAWAYA.apk';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+          }
+        } catch {}
+      })();
+    </script>
+  </body>
+</html>
